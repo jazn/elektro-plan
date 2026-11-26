@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prywatność – Elektro Plan</title>
+  <meta name="description" content="Jakie dane przetwarza Elektro Plan, czego nie wysyła, jak działają opcjonalne statystyki użycia (za zgodą) i zgłoszenia błędów na GitHubie.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="canonical" href="https://elektro-plan.pl/prywatnosc.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="Elektro Plan">
+  <meta property="og:url" content="https://elektro-plan.pl/prywatnosc.html">
+  <meta property="og:title" content="Prywatność – Elektro Plan">
+  <meta property="og:description" content="Jakie dane przetwarza Elektro Plan, czego nie wysyła, jak działają opcjonalne statystyki użycia (za zgodą) i zgłoszenia błędów na GitHubie.">
+  <meta property="og:image" content="https://elektro-plan.pl/social/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Elektro Plan: plan mieszkania z rozmieszczonymi symbolami elektryki">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prywatność – Elektro Plan">
+  <meta name="twitter:description" content="Jakie dane przetwarza Elektro Plan, czego nie wysyła, jak działają opcjonalne statystyki użycia (za zgodą) i zgłoszenia błędów na GitHubie.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563eb'/%3E%3Cpath d='M18 5L9 18h6l-1 9 9-13h-6z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Przejdź do treści</a>
+  <header class="top"><div class="wrap top-in">
+    <a class="brand" href="index.html" aria-label="Elektro Plan – strona główna"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#2563eb"/><path d="M18 5L9 18h6l-1 9 9-13h-6z" fill="#fff"/></svg><b>Elektro&nbsp;Plan</b></a>
+    <nav class="nav open-static" aria-label="Nawigacja"><a href="index.html#licencja">Licencja</a><a href="prywatnosc.html">Prywatność</a><a href="index.html#zglos">Zgłoś błąd</a><a class="btn btn-primary btn-sm" href="app/"><span class="bl">Uruchom aplikację</span><span class="bs">Aplikacja</span></a></nav>
+  </div></header>
+
+  <main id="main" class="wrap narrow doc">
+    <h1>Prywatność</h1>
+    <p class="upd">Ostatnia aktualizacja: 26 listopada 2026. Administrator: <span>Mateusz 'mojes' Niemojewski</span>, kontakt: <a href="mailto:elektro-plan@niemojewski.eu">elektro-plan@niemojewski.eu</a>.</p>
+
+    <div class="tldr" role="note"><b>W skrócie</b>
+      <ul>
+        <li>Projekt zostaje na Twoim urządzeniu – nie ma konta, ciasteczek ani reklam.</li>
+        <li>Statystyki użycia są <b>wyłączone, dopóki sam ich nie włączysz</b>; odmowa niczego nie ogranicza (po niej pokazujemy tylko nieblokującą informację o licencjach komercyjnych). To dane pseudonimowe, bez nazw i treści projektu – wszystko widać w podglądzie w aplikacji.</li>
+        <li>Zgłoszenie błędu otwiera publiczną stronę na GitHubie dopiero po Twoim kliknięciu; nic nie wychodzi automatycznie.</li>
+      </ul>
+      <p>Skróty: <a href="#projekt">projekt</a> · <a href="#statystyki">statystyki</a> · <a href="#hosting">hosting</a> · <a href="#zgloszenia">zgłoszenia</a> · <a href="#cele">cele i odbiorcy</a> · <a href="#prawa">Twoje prawa</a></p></div>
+
+    <h2 id="projekt">Aplikacja: Twój projekt zostaje u Ciebie</h2>
+    <ul>
+      <li>Elektro Plan działa w przeglądarce. Projekt jest zapisywany <b>tylko na Twoim urządzeniu</b> (pamięć przeglądarki) oraz w plikach, które sam zapisujesz. Nie ma konta ani logowania.</li>
+      <li>Aplikacja <b>nie wysyła projektu</b> na żaden serwer, nie używa ciasteczek, reklam ani zewnętrznych czcionek i skryptów. Statystyki użycia (dane pseudonimowe: bez nazw i treści projektu) wysyła <b>wyłącznie za Twoją zgodą</b> – zob. sekcja „Statystyki użycia” poniżej.</li>
+      <li>Bez Twojej zgody jedyne połączenie, jakie aplikacja nawiązuje sama, to sprawdzenie, czy nie ma nowszej wersji: pobiera plik <code>index.html</code> z tego samego serwera, z którego została uruchomiona. Nie zawiera ono żadnych danych projektu.</li>
+    </ul>
+
+    <h2 id="statystyki">Statystyki użycia (opcjonalne, tylko za Twoją zgodą)</h2>
+    <div class="tbl-wrap"><table class="levels">
+      <thead><tr><th>Poziom</th><th>Co wysyłamy</th><th>Czego nigdy</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Wyłączone (domyślnie)</th><td data-l="Co wysyłamy">Nic. Nie powstaje identyfikator instalacji.</td><td data-l="Czego nigdy">—</td></tr>
+        <tr><th scope="row">Podstawowy</th><td data-l="Co wysyłamy">Liczby: czas pracy, liczba projektów i elementów (max, średnia, mediana), wersja programu, sam fakt rozpoczęcia wizyty.</td><td data-l="Czego nigdy">Nazw, treści, adresów, e-maili, zrzutów ekranu.</td></tr>
+        <tr><th scope="row">Rozszerzony</th><td data-l="Co wysyłamy">To, co podstawowy, plus: widoki i narzędzia (liczniki), grupa dodawanych urządzeń, kody reguł walidacji, rodzaj błędów (bez komunikatu), kroki „pierwszego użycia”, informacja o otwarciu projektu przykładowego, sygnały zacięć.</td><td data-l="Czego nigdy">Tego samego – program technicznie nie potrafi wysłać dowolnego tekstu.</td></tr>
+      </tbody>
+    </table></div>
+    <p>Szczegóły i pełne definicje poniżej; wszystko, co wychodzi, widzisz na żywo w oknie „Prywatność i statystyki”.</p>
+    <ul>
+      <li><b>Domyślnie wyłączone.</b> Po pierwszym uruchomieniu (po oknie powitalnym) aplikacja pyta, czy chcesz pomóc w ulepszaniu programu: „Podstawowe”, „Rozszerzone” albo „Nie, dziękuję” (lub „zapytaj później” – wtedy nie pytamy przez 30 dni). Do czasu Twojego wyboru <b>nie powstaje identyfikator instalacji</b> i nic nie jest wysyłane. Wybór zmienisz lub cofniesz w każdej chwili: menu ⋯ → „Prywatność i statystyki”. Wycofanie zgody jest tak samo proste jak jej udzielenie i nie wpływa na zgodność z prawem przetwarzania sprzed wycofania. Odmowa nie ogranicza działania programu; po wybraniu „Nie, dziękuję” pokazujemy tylko nieblokującą informację o licencjach komercyjnych (m.in. planowanych, z wyłączonymi na stałe statystykami) wraz z linkiem do strony z adresem kontaktowym.</li>
+      <li><b>To dane pseudonimowe, nie anonimowe:</b> każdej instalacji (przeglądarce) przypisujemy trwały losowy identyfikator, który łączy wizyty z tej przeglądarki aż do wyłączenia statystyk lub wygenerowania nowego. Sam identyfikator nie zawiera nazwy, adresu ani treści projektu i nie służy do oceniania ani śledzenia konkretnych osób; trzeba jednak pamiętać, że jako trwały identyfikator online – razem z adresem IP widocznym dla odbiorcy – może być uznany za dane osobowe, dlatego traktujemy go jak dane osobowe (zgoda, prawa dostępu i usunięcia).</li>
+      <li><b>Czego nie ma w danych zdarzeń:</b> nazw projektów, pomieszczeń, pięter, rozdzielnic i urządzeń, adresów, notatek, treści plików, zrzutów ekranu, adresu e-mail, dokładnego rozmiaru ekranu, języka, tytułu strony ani strony odsyłającej. Zdarzenia składają się wyłącznie z liczb, wartości z list zamkniętych i losowych identyfikatorów – program technicznie nie potrafi wysłać dowolnego tekstu.</li>
+      <li><b>Dane techniczne połączenia:</b> jak każde połączenie internetowe, wysłanie zdarzenia ujawnia odbiorcy adres IP oraz standardowe nagłówki przeglądarki (przeglądarka, system, język interfejsu). Umami grupuje sesje po adresie IP i przeglądarce (nasz identyfikator tylko je łączy) i na tej podstawie podaje przeglądarkę, system, typ urządzenia i przybliżoną lokalizację (np. kraj, region, miasto).</li>
+      <li><b>Identyfikatory.</b> Po wyrażeniu zgody losujemy identyfikator instalacji (UUID, zapisany w pamięci przeglądarki: klucz <code>elektroplan.telemetry.v1</code>). Każdy nowy projekt ma własny losowy identyfikator (pole <code>uid</code>), zapisywany zawsze – także bez zgody – razem z projektem w przeglądarce i w plikach <code>.elektroplan.json</code>; nigdzie nie jest wysyłany. W statystykach identyfikator projektu to skrót z identyfikatora instalacji i identyfikatora projektu, więc osoba postronna nie powiąże go z plikiem ani z inną instalacją (operator narzędzia analitycznego widzi oczywiście instalację i jej projekty razem). Po wyłączeniu statystyk identyfikator instalacji i lokalny rejestr projektów są usuwane; zostaje tylko zapis Twojej decyzji (albo terminu „zapytaj później”).</li>
+      <li><b>Podgląd:</b> w oknie „Prywatność i statystyki” widzisz na żywo każde wysłane zdarzenie w takiej postaci, w jakiej wychodzi z przeglądarki, oraz swój identyfikator i lokalnie liczone statystyki.</li>
+      <li><b>Odbiorca i technika:</b> dane trafiają do Umami (Umami Cloud, Umami Software, Inc.) – narzędzia analitycznego bez cookies i bez śledzenia między stronami. Aplikacja wysyła zdarzenia bezpośrednio do API Umami (nie ładuje cudzego skryptu śledzącego), bez ciasteczek i bez nagłówka Referer. Do zdarzeń dołączamy nazwę domeny i ścieżkę (np. <code>/app/</code>). Dane statystyczne są przechowywane w regionie <b>Unii Europejskiej</b> (konto Umami Cloud założone z regionem UE); według dokumentacji Umami usługi pomocnicze (sieć CDN, zabezpieczenia, logi operacyjne) mogą działać także poza tym regionem, a sam dostawca (Umami Software, Inc.) jest podmiotem spoza Unii. Przekazanie danych poza EOG opiera się na mechanizmach wskazanych w dokumentacji Umami (m.in. umowa powierzenia – DPA – i standardowe klauzule umowne); aktualny tekst umowy znajdziesz na stronach Umami.</li>
+      <li><b>Podstawa prawna:</b> Twoja zgoda (art. 6 ust. 1 lit. a RODO), także na zapisanie identyfikatora w pamięci przeglądarki. <b>Okres przechowywania:</b> zgodny z okresem retencji planu Umami (6 miesięcy–2 lata; nie dłużej niż 24 miesiące). Na Twoją prośbę (z podaniem identyfikatora instalacji widocznego w oknie „Prywatność i statystyki” – skopiuj go przed wyłączeniem statystyk) usuniemy dane powiązane z tym identyfikatorem w zakresie, w jakim narzędzie to umożliwia; po wyłączeniu statystyk lub wygenerowaniu nowego identyfikatora dane przestają być powiązane z Twoją przeglądarką i wygasają wraz z okresem retencji.</li>
+      <li><b>Sygnały „nie śledź”:</b> jeśli przeglądarka wysyła Do Not Track lub Global Privacy Control, statystyki są wyłączone automatycznie, bez pytania, i nie da się ich włączyć (wyłącz ten sygnał dla witryny, jeśli chcesz pomóc). Statystyki nie działają też w wersjach uruchamianych lokalnie (np. na <code>localhost</code>). Blokery reklam i ochrona przed śledzeniem mogą blokować wysyłkę – wtedy dane po prostu nie docierają; jeśli statystyki są włączone, a bloker je zatrzymuje, wyjaśnia to <a href="blokada-statystyk.html">instrukcja krok po kroku</a>.</li>
+    </ul>
+    <details class="more-tech"><summary>Pełny opis poziomów: podstawowego i rozszerzonego</summary>
+    <ul>
+      <li><b>Poziom podstawowy – tylko liczby:</b> czas aktywnej pracy z programem (w sekundach), liczba utworzonych projektów (projekt liczy się od pierwszego dodanego elementu; <b>projekt przykładowy nie jest liczony</b> – także po jego edycji – żeby zawsze dostępny przykład nie zawyżał wyników), liczba utworzonych elementów, liczba elementów w każdym projekcie (z tego liczymy maksimum, średnią i medianę), wersja programu oraz sam fakt rozpoczęcia sesji (zdarzenia „wizyta” i „session_start”: wersja, dotyk/mysz, przedział szerokości okna, czy to pierwsza wizyta). „Element” to urządzenie/symbol w projekcie – ściany, pomieszczenia i kable nie są liczone.</li>
+      <li><b>Poziom rozszerzony – jak się korzysta:</b> to, co w podstawowym, oraz: które widoki otwierasz i jak długo w nich jesteś, których narzędzi i funkcji używasz (liczniki, np. eksport, zapis, cofnij, otwarcie pomocy i formularza zgłoszeń), jakie grupy urządzeń dodajesz (tylko dwie szerokie: „instalacja elektryczna” albo „niskie napięcie” – bez konkretnych typów i bez wyróżniania alarmu), jakie reguły walidacji się pojawiają (kody reguł, bez treści komunikatów; mogą pośrednio mówić o stanie instalacji), błędy programu (standardowy rodzaj błędu i miejsce w kodzie – bez komunikatu), kroki „pierwszego użycia” (np. pierwszy element, pierwszy zapis – z czasem w minutach), czas od założenia nowego (pustego) projektu do pierwszego elementu w tej samej wizycie, informacja, że otwarto projekt przykładowy (bez jego rozmiaru), sygnały zacięć (seria cofnięć, porzucone rysowanie), dotyk czy mysz, przedział szerokości okna oraz skrót wersji programu.</li>
+    </ul>
+    </details>
+    <details class="more-tech"><summary>Szczegóły techniczne: częstotliwość wysyłki i praca w kilku kartach</summary>
+    <ul>
+      <li><b>Częstotliwość:</b> liczniki (czas pracy, funkcje) wysyłamy zbiorczo co kilka minut oraz przy ukryciu lub zamknięciu karty (np. przełączenie okna) i przy zmianie projektu; rozmiar projektu – na koniec pracy (zamknięcie karty, zmiana projektu) i najwyżej co 30 minut, a przy przełączaniu okien/aplikacji: pierwszy rozmiar od razu, potem najwyżej co 10 minut; sama wysyłka przy przełączaniu okien następuje najwyżej raz na minutę. Dlatego z danych da się wyczytać rytm pracy, w tym momenty opuszczania karty, ale nie pojedyncze kliknięcia.</li>
+      <li><b>Zmiana poziomu w kilku kartach:</b> gdy obniżysz poziom do „Podstawowych” w jednej karcie, pozostałe karty tej przeglądarki od razu przestają wysyłać dane rozszerzone (niewysłane są odrzucane, a dane podstawowe – wysyłane); gdy statystyki wyłączysz, pozostałe karty nie wysyłają już niczego.</li>
+    </ul>
+    </details>
+
+    <h2 id="hosting">Hosting</h2>
+    <p>Strona i aplikacja są udostępniane przez GitHub Pages (GitHub, Inc.). Serwer może rejestrować standardowe dane żądań (adres IP, przeglądarka, czas) zgodnie z polityką prywatności GitHub. Autor nie ma dostępu do tych dzienników i – poza opcjonalnymi statystykami użycia wysyłanymi za Twoją zgodą (patrz wyżej) – nie prowadzi własnych statystyk odwiedzin.</p>
+
+    <h2 id="zgloszenia">Zgłoszenia błędów i pomysłów (GitHub Issues)</h2>
+    <ul>
+      <li>Przycisk „Zgłoś błąd / pomysł” w aplikacji <b>niczego nie wysyła automatycznie</b>. Składa treść zgłoszenia na Twoim urządzeniu, pokazuje jej pełny podgląd i dopiero po kliknięciu otwiera stronę „nowe zgłoszenie” w serwisie GitHub z wypełnionym formularzem.</li>
+      <li>Zgłoszenie zostaje opublikowane dopiero wtedy, gdy zostanie kliknięte „Submit new issue” na swoim koncie GitHub. <b>Zgłoszenia są publiczne</b> – widzi je każdy, razem z Twoją nazwą użytkownika GitHub. Dane z nimi związane przetwarza GitHub na własnych zasadach (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">polityka prywatności GitHub</a>), a repozytorium ze zgłoszeniami prowadzi administrator: <a href="https://github.com/jazn/elektro-plan/issues" rel="noopener">https://github.com/jazn/elektro-plan/issues</a>.</li>
+      <li>Do zgłoszenia możesz dołączyć (każdą z tych rzeczy osobno, z podglądem): <b>informacje techniczne</b> (wersja programu, przeglądarka, język przeglądarki, rozmiar ekranu, rodzaj wejścia, bieżący widok, liczba elementów projektu i problemów – bez nazw, adresów i notatek), <b>ostatnie komunikaty błędów</b> programu oraz <b>zrzut ekranu</b>. Zrzut powstaje lokalnie i trafia do schowka – wklejasz go sam. Pokazuje to, co widać w aplikacji, więc może zawierać nazwy pomieszczeń lub urządzeń.</li>
+      <li><b>Nie wpisuj</b> w zgłoszeniach i na zrzutach adresów, danych osobowych, haseł ani kodów dostępu (np. do alarmu). Pliku projektu nie dołączamy automatycznie; jeśli dołączysz go ręcznie, sprawdź jego zawartość.</li>
+      <li>Treść zgłoszenia możesz edytować lub usunąć na GitHubie. Jeśli chcesz, żeby autor usunął Twoje zgłoszenie lub komentarz, napisz na adres kontaktowy.</li>
+    </ul>
+
+    <h2 id="cele">Cele, podstawy prawne i odbiorcy</h2>
+    <ul>
+      <li><b>Administrator:</b> autor programu (dane na górze strony) odpowiada za dane, które trafiają do niego w zgłoszeniach, wiadomościach e-mail i – jeśli wyrazisz zgodę – w statystykach użycia. <b>GitHub, Inc.</b> jest odrębnym administratorem danych swoich użytkowników (konto, publikowane zgłoszenia) oraz dostawcą hostingu strony.</li>
+      <li><b>Cel:</b> obsługa zgłoszeń i pytań, naprawianie błędów i rozwój programu, odpowiedź na wiadomość, a w przypadku statystyk użycia – ulepszanie programu (<b>podstawa: Twoja zgoda</b>, art. 6 ust. 1 lit. a RODO; zob. sekcja „Statystyki użycia”). <b>Podstawa dla zgłoszeń i poczty:</b> uzasadniony interes administratora (art. 6 ust. 1 lit. f RODO) – ulepszanie programu i kontakt z użytkownikami; w zakresie danych, które sam dołączasz do zgłoszenia (np. zrzut ekranu), dobrowolne działanie użytkownika.</li>
+      <li><b>Odbiorcy i transfer poza EOG:</b> zgłoszenia i hosting obsługuje GitHub, Inc. (USA); mechanizmy ochrony danych przy takim przekazaniu opisuje jego <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">polityka prywatności</a>. Umami (Umami Software, Inc.) przetwarza opcjonalne statystyki użycia jako podmiot przetwarzający. Dostawca poczty administratora przetwarza wiadomości e-mail. Danych nie sprzedajemy ani nie przekazujemy nikomu poza wymienionymi podmiotami.</li>
+      <li><b>Okres przechowywania:</b> statystyki użycia – zgodnie z okresem retencji w Umami (zob. sekcja „Statystyki użycia”); zgłoszenia na GitHubie – do czasu zakończenia sprawy lub rozwoju danej funkcji albo do usunięcia na Twój wniosek; wiadomości e-mail – do załatwienia sprawy, a w razie sporu do upływu terminów przedawnienia roszczeń.</li>
+      <li><b>Prawo sprzeciwu:</b> przetwarzanie oparte na uzasadnionym interesie możesz zakwestionować w dowolnym momencie (art. 21 RODO) – wtedy usuniemy dane, chyba że istnieją ważne, prawnie uzasadnione podstawy do ich dalszego przetwarzania. Dane nie służą do podejmowania zautomatyzowanych decyzji, a statystyki nie są używane do oceniania ani śledzenia konkretnych osób.</li>
+      <li>Niewysłany szkic zgłoszenia jest trzymany tymczasowo w pamięci sesji karty przeglądarki (<code>sessionStorage</code>) i znika po jej zamknięciu lub po otwarciu zgłoszenia; nigdzie nie jest wysyłany.</li>
+      <li>Ostatnie komunikaty błędów programu mogą zawierać fragmenty danych z Twojego projektu, dlatego <b>nie są domyślnie dołączane</b> i widać je przed dołączeniem.</li>
+    </ul>
+
+    <h2>Kontakt e-mailem</h2>
+    <p>Jeśli napiszesz na adres kontaktowy, przetwarzamy Twój adres e-mail i treść wiadomości wyłącznie po to, by odpowiedzieć i obsłużyć sprawę (także w sprawie licencji komercyjnej), i przechowujemy je tak długo, jak to potrzebne do jej obsługi. Nie przekazujemy ich dalej.</p>
+
+    <h2>Luki bezpieczeństwa</h2>
+    <p>Jeśli znaleziono lukę bezpieczeństwa, <b>nie zgłaszaj jej publicznie</b> – napisz na adres kontaktowy albo użyj opcji „Report a vulnerability” w zakładce Security repozytorium GitHub.</p>
+
+    <h2 id="prawa">Twoje prawa</h2>
+    <p>Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia, ograniczenia przetwarzania i sprzeciwu, a także prawo do <b>wycofania zgody</b> na statystyki w dowolnym momencie (menu ⋯ → „Prywatność i statystyki”), a także prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych. Podanie danych jest dobrowolne, ale bez nich nie da się obsłużyć zgłoszenia lub wiadomości. W sprawach dotyczących danych na GitHubie możesz też skorzystać z narzędzi tego serwisu.</p>
+
+    <h2>Licencja i zgłoszenia</h2>
+    <p>Zasady przekazywania autorom treści zgłoszeń opisuje sekcja 9 <a href="LICENSE.txt">licencji</a>. Zmiany tej strony publikujemy tutaj, ze zmienioną datą aktualizacji.</p>
+  </main>
+
+  <footer class="foot"><div class="wrap foot-in">
+    <div><b>Elektro&nbsp;Plan</b><p>© 2026 <span>Mateusz 'mojes' Niemojewski</span>. Licencja: free for personal use.</p><p class="small">Wersja v0.2.0 · licencja 1.3</p></div>
+    <div class="small"><a href="LICENSE.txt">Licencja</a> · <a href="licencja-komercyjna.html">Licencja komercyjna</a> · <a href="prywatnosc.html">Prywatność</a> · <a href="blokada-statystyk.html">Odblokowanie statystyk</a> · <a href="index.html#faq">FAQ</a> · <a href="index.html#zglos">Zgłoś błąd</a> · <a href="mailto:elektro-plan@niemojewski.eu">Kontakt</a></div>
+  </div></footer>
+</body>
+</html>

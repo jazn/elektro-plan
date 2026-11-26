@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- seo:start -->
+  <title>Elektro Plan – projekt instalacji elektrycznej, alarmu i smart home w przeglądarce</title>
+  <meta name="description" content="Elektro Plan: plan mieszkania, rozdzielnica, drzewo i graf urządzeń w jednym narzędziu. Bez instalacji i konta, dane zostają u Ciebie. Za darmo do użytku osobistego.">
+  <link rel="canonical" href="https://elektro-plan.pl/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="Elektro Plan">
+  <meta property="og:url" content="https://elektro-plan.pl/">
+  <meta property="og:title" content="Elektro Plan – zaprojektuj instalację elektryczną, alarm i smart home">
+  <meta property="og:description" content="Plan, rozdzielnica, drzewo i graf – cztery widoki jednej instalacji. Walidacja na żywo, raporty, trasy kabli. Free for personal use.">
+  <meta property="og:image" content="https://elektro-plan.pl/social/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Elektro Plan: plan mieszkania z rozmieszczonymi symbolami elektryki i hasłem o projekcie instalacji w przeglądarce">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://elektro-plan.pl/social/og-image.png">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Elektro Plan","applicationCategory":"DesignApplication","operatingSystem":"Web","inLanguage":"pl","description":"Elektro Plan: plan mieszkania, rozdzielnica, drzewo i graf urządzeń w jednym narzędziu. Bez instalacji i konta, dane zostają u Ciebie. Za darmo do użytku osobistego.","url":"https://elektro-plan.pl/","image":"https://elektro-plan.pl/social/og-image.png","license":"https://elektro-plan.pl/LICENSE.txt","offers":{"@type":"Offer","price":"0","priceCurrency":"PLN","description":"Free for personal use (użytek osobisty, niekomercyjny)"}}</script>
+  <!-- seo:end -->
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563eb'/%3E%3Cpath d='M18 5L9 18h6l-1 9 9-13h-6z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Przejdź do treści</a>
+
+  <header class="top" id="top">
+    <div class="wrap top-in">
+      <a class="brand" href="#top" aria-label="Elektro Plan – początek strony">
+        <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#2563eb"/><path d="M18 5L9 18h6l-1 9 9-13h-6z" fill="#fff"/></svg>
+        <b>Elektro&nbsp;Plan</b>
+      </a>
+      <button class="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu">☰</button>
+      <nav id="nav" class="nav" aria-label="Główna nawigacja">
+        <a href="#jak">Jak to działa</a>
+        <a href="#widoki">Widoki</a>
+        <a href="#funkcje">Funkcje</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#licencja">Licencja</a>
+        <a href="#faq">FAQ</a>
+        <a href="#zglos">Zgłoś błąd</a>
+        <a class="btn btn-primary btn-sm" href="app/" data-app-link>Uruchom aplikację</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-in">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot"></span> Free for personal use · działa w przeglądarce</p>
+          <h1>Narysuj plan, <span class="grad">program podpowie zasilanie obwodów</span> i&nbsp;pokaże błędy</h1>
+          <p class="lead">Elektro Plan to projektant instalacji elektrycznej, alarmu i&nbsp;smart home w&nbsp;przeglądarce. Klikasz ściany, aparaty i&nbsp;symbole – to samo widzisz jako plan, rozdzielnicę, drzewo i&nbsp;graf i&nbsp;edytujesz w&nbsp;każdym z&nbsp;nich.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary btn-lg" href="app/" data-app-link>Uruchom aplikację – za darmo</a>
+            <a class="btn btn-ghost btn-lg" href="#film">▶ Zobacz film (1,5 min)</a>
+          </div>
+          <ul class="ticks">
+            <li>Bez instalacji i&nbsp;konta</li>
+            <li>Projekt zostaje na Twoim urządzeniu</li>
+            <li>Interfejs po polsku</li>
+          </ul>
+        </div>
+        <figure class="hero-shot">
+          <div class="frame"><div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <video id="hero-video" autoplay muted loop playsinline preload="metadata" poster="video/poster.jpg" aria-label="Animacja: w rozdzielnicy zmiana wyłącznika na zbyt duży powoduje błąd w projekcie, po poprawce błąd znika">
+              <source src="video/hero-loop.webm" type="video/webm">
+              <source src="video/hero-loop.mp4" type="video/mp4">
+            </video>
+          </div>
+          <button class="pause-btn" id="hero-pause" aria-pressed="false" aria-label="Zatrzymaj animację">❚❚ Pauza</button>
+        </figure>
+      </div>
+    </section>
+
+    <section class="strip" aria-label="Najważniejsze liczby">
+      <div class="wrap strip-in">
+        <div><b>4</b><span>widoki tej samej instalacji</span></div>
+        <div><b>~50</b><span>typów urządzeń i&nbsp;symboli: elektryka, alarm, smart home, sieć</span></div>
+        <div><b>48</b><span>gotowych modeli Satel w&nbsp;5 grupach: VERSA, PERFECTA, INTEGRA, ABAX&nbsp;2, akcesoria</span></div>
+        <div><b>0&nbsp;zł</b><span>do użytku osobistego</span></div>
+      </div>
+    </section>
+
+    <!-- JAK TO DZIAŁA -->
+    <section class="sec" id="jak">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow">Łatwość użycia</p>
+          <h2>Od pustego planu do rozdzielnicy – krok po kroku</h2>
+          <p class="sub">Klikasz i&nbsp;przeciągasz, a&nbsp;program pilnuje reguł: podłącza zasilanie, podpowiada obwody i&nbsp;zgłasza błędy. Film poniżej pokazuje cały pierwszy projekt w&nbsp;około półtorej minuty (nagranie bez montażu).</p>
+        </header>
+        <ol class="steps">
+          <li><span class="n">1</span><h3>Narysuj plan</h3><p>Ściany kilkoma kliknięciami (długość możesz wpisać z&nbsp;klawiatury), pomieszczenia także w&nbsp;kształcie litery L, drzwi i&nbsp;okna. Możesz wczytać rzut jako podkład i&nbsp;ustawić skalę.</p></li>
+          <li><span class="n">2</span><h3>Ułóż rozdzielnicę</h3><p>Klik w&nbsp;aparat wstawia go na szynę DIN: rozłącznik, RCD, wyłączniki, RCBO, zasilacze. Zasilanie podpowiada się samo.</p></li>
+          <li><span class="n">3</span><h3>Rozmieść osprzęt</h3><p>Wybierz obwód i&nbsp;klikaj gniazda, oświetlenie, czujki alarmu, kamery, urządzenia smart. Podłączają się do właściwego obwodu lub centrali.</p></li>
+          <li><span class="n">4</span><h3>Sprawdź i&nbsp;zapisz</h3><p>Problemy pojawiają się na bieżąco. Gotowe zestawienia: obwody, materiały, długości kabli. Eksport do SVG, PNG, CSV i&nbsp;druk.</p></li>
+        </ol>
+
+        <div class="video-card" id="film">
+          <div class="vwrap">
+            <video id="demo-video" controls preload="none" playsinline poster="video/poster.jpg" aria-describedby="video-desc">
+              <source src="video/elektro-plan-demo.webm" type="video/webm">
+              <source src="video/elektro-plan-demo.mp4" type="video/mp4">
+              <track kind="captions" srclang="pl" label="Polski" src="video/elektro-plan-demo.vtt">
+              Twoja przeglądarka nie obsługuje wideo. <a href="video/elektro-plan-demo.mp4">Pobierz film (MP4)</a>.
+            </video>
+            <button class="play-big" id="play-big" aria-label="Odtwórz film" title="Odtwórz film">▶</button>
+          </div>
+          <p id="video-desc" class="cap">Prawdziwe nagranie aplikacji: pusty projekt → ściany → rozdzielnica → osprzęt → błąd zgłoszony na bieżąco → alarm i&nbsp;Satel z&nbsp;baterią → kabel LAN → drzewo i&nbsp;graf → widoki obok siebie z&nbsp;filtrem → raport materiałów. Około półtorej minuty, z&nbsp;podpisami kroków (napisy można włączyć w odtwarzaczu).</p>
+          <details class="transcript"><summary>Opis kroków (tekst)</summary><ol id="transcript-list"><li>Rysuj ściany – kilka kliknięć (długość możesz wpisać z klawiatury).</li><li>Pomieszczenia, drzwi i okna.</li><li>Ustaw przyłącze i rozdzielnicę.</li><li>Rozdzielnica: klik w aparat wstawia go na szynę DIN.</li><li>Wybierz obwód i klikaj symbole – zasilanie podłącza się samo.</li><li>Program sprawdza projekt na bieżąco – np. za duży wyłącznik na ten przewód (po zmianie na 25 A pojawia się błąd, po poprawce na 16 A znika).</li><li>Alarm i smart home w tym samym projekcie.</li><li>Katalog Satel: kontroler ABAX 2 i czujka radiowa na baterię.</li><li>Kabel LAN: narzędzie „Kabel” – wskaż drogę ułożenia.</li><li>Ten sam projekt jako drzewo urządzeń i jako graf zależności.</li><li>Plan, drzewo i graf obok siebie – jeden wspólny filtr.</li><li>Raporty: obwody, zestawienie materiałów, długości kabli.</li></ol></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- WIDOKI -->
+    <section class="sec alt" id="widoki">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow">Jedna instalacja, cztery widoki</p>
+          <h2>Edytuj tak, jak Ci wygodnie</h2>
+          <p class="sub">Dane są jedne. Zmiana w&nbsp;jednym widoku natychmiast pojawia się w&nbsp;pozostałych – także gdy oglądasz je obok siebie.</p>
+        </header>
+        <div class="tabs" role="tablist" aria-label="Widoki aplikacji">
+          <button role="tab" id="t-plan" aria-controls="p-plan" aria-selected="true">Plan</button>
+          <button role="tab" id="t-panel" aria-controls="p-panel" aria-selected="false" tabindex="-1">Rozdzielnica</button>
+          <button role="tab" id="t-tree" aria-controls="p-tree" aria-selected="false" tabindex="-1">Drzewo</button>
+          <button role="tab" id="t-graph" aria-controls="p-graph" aria-selected="false" tabindex="-1">Graf</button>
+        </div>
+        <div class="tabpanels">
+          <div role="tabpanel" id="p-plan" aria-labelledby="t-plan" class="tp">
+            <div class="tp-text"><h3>Plan</h3><p>Rysujesz mieszkanie lub dom (wiele pięter) i&nbsp;rozmieszczasz symbole elektryki, alarmu, smart home i&nbsp;sieci. Zaznaczenie urządzenia podświetla cały jego obwód i&nbsp;trasę zasilania.</p><ul><li>obracanie symboli, przyciąganie do ścian</li><li>podkład z&nbsp;obrazu i&nbsp;skalowanie</li><li>kopiuj, wklej, duplikuj, cofnij/ponów</li></ul></div>
+            <figure class="shot"><img loading="lazy" src="img/plan-sm.webp" srcset="img/plan-sm.webp 800w, img/plan.webp 1600w" sizes="(min-width: 980px) 700px, 92vw" width="1600" height="1000" alt="Widok planu z zaznaczonym obwodem"></figure>
+          </div>
+          <div role="tabpanel" id="p-panel" aria-labelledby="t-panel" class="tp" hidden>
+            <div class="tp-text"><h3>Rozdzielnica</h3><p>Graficzny montaż aparatów na szynach DIN – przeciągasz moduły i&nbsp;widzisz, ile miejsca zostało. Program podpowiada, z&nbsp;czego zasilany jest każdy aparat.</p><ul><li>RCD, MCB, RCBO, stycznik, zasilacze, aktory</li><li>kontrola zapełnienia i&nbsp;kolejności względem schematu</li><li>wiele rozdzielnic w&nbsp;jednym projekcie</li></ul></div>
+            <figure class="shot"><img loading="lazy" src="img/panel-sm.webp" srcset="img/panel-sm.webp 800w, img/panel.webp 1600w" sizes="(min-width: 980px) 700px, 92vw" width="1600" height="1000" alt="Widok rozdzielnicy z aparatami na szynie DIN"></figure>
+          </div>
+          <div role="tabpanel" id="p-tree" aria-labelledby="t-tree" class="tp" hidden>
+            <div class="tp-text"><h3>Drzewo</h3><p>Cała instalacja od przyłącza po ostatni odbiornik jako zwijane drzewo. Idealne do szybkiego porządkowania: dodajesz elementy podrzędne, przepinasz zasilanie, zmieniasz nazwy.</p><ul><li>obciążenia i&nbsp;prądy liczone dla każdej gałęzi</li><li>lokalizacja w&nbsp;rozdzielnicy i&nbsp;na planie przy każdym elemencie</li><li>obsługa klawiaturą</li></ul></div>
+            <figure class="shot"><img loading="lazy" src="img/tree-sm.webp" srcset="img/tree-sm.webp 800w, img/tree.webp 1600w" sizes="(min-width: 980px) 700px, 92vw" width="1600" height="1000" alt="Widok drzewa urządzeń z obciążeniami"></figure>
+          </div>
+          <div role="tabpanel" id="p-graph" aria-labelledby="t-graph" class="tp" hidden>
+            <div class="tp-text"><h3>Graf</h3><p>Zależności jako diagram: zasilanie, sterowanie, magistrale, połączenia radiowe i&nbsp;sieć LAN. Łączysz urządzenia przeciągając wskaźnik, a&nbsp;program pilnuje, czy dane połączenie ma sens.</p><ul><li>rozwijanie i&nbsp;zwijanie obwodów</li><li>różne rodzaje połączeń z&nbsp;legendą</li><li>automatyczne układanie</li></ul></div>
+            <figure class="shot"><img loading="lazy" src="img/graph-sm.webp" srcset="img/graph-sm.webp 800w, img/graph.webp 1600w" sizes="(min-width: 980px) 700px, 92vw" width="1600" height="1000" alt="Graf zależności zasilania w instalacji"></figure>
+          </div>
+        </div>
+
+        <div class="split">
+          <div class="split-text">
+            <h3>Widoki obok siebie i&nbsp;jeden filtr</h3>
+            <p>Pokaż plan, drzewo i&nbsp;graf jednocześnie. Zaznaczasz element w&nbsp;jednym panelu – od razu go widać w&nbsp;pozostałych. Jeden pasek filtrów działa we wszystkich widokach: szukaj po nazwie, modelu, kablu lub pomieszczeniu, pokaż tylko problemy albo tylko wybrany obwód.</p>
+            <a class="more" href="#galeria">Zobacz więcej zrzutów →</a>
+          </div>
+          <figure class="shot"><img loading="lazy" src="img/multi-sm.webp" srcset="img/multi-sm.webp 800w, img/multi.webp 1600w" sizes="(min-width: 980px) 640px, 92vw" width="1600" height="900" alt="Plan, drzewo i graf wyświetlone jednocześnie obok siebie"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUNKCJE -->
+    <section class="sec" id="funkcje">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow">Pełne rozwiązanie</p>
+          <h2>Wszystko, czego potrzebuje projekt domowej instalacji</h2>
+          <p class="sub">Od przyłącza do czujki dymu. Elektryka, alarm, smart home i&nbsp;sieć w&nbsp;jednym modelu, z&nbsp;dokumentacją na wyjściu.</p>
+        </header>
+        <div class="cards">
+          <article class="card"><span class="ic">⚡</span><h3>Elektryka</h3><p>Przyłącze 1- i&nbsp;3-fazowe, rozłącznik, SPD, RCD, MCB, RCBO, styczniki, zasilacze. Obwody z&nbsp;fazami, przewodami i&nbsp;nazwami.</p></article>
+          <article class="card"><span class="ic">🛡</span><h3>Alarm i&nbsp;CCTV</h3><p>Centrale, ekspandery, manipulatory, czujki ruchu, dymu, zalania, kontaktrony, syreny i&nbsp;kamery. Czujki same łączą się z&nbsp;najbliższą centralą.</p></article>
+          <article class="card"><span class="ic">🏠</span><h3>Smart home</h3><p>Kontrolery, przekaźniki, aktory KNX, przyciski, termostaty, czujniki i&nbsp;napędy rolet – z&nbsp;powiązaniami sterowania i&nbsp;magistral.</p></article>
+          <article class="card"><span class="ic">🌐</span><h3>Sieć i&nbsp;AV</h3><p>Switch PoE, access pointy, gniazda RJ45 i&nbsp;RTV/SAT, kable LAN prowadzone wybraną trasą.</p></article>
+          <article class="card"><span class="ic">✅</span><h3>Walidacja na żywo</h3><p>Przeciążenia, przekrój przewodu a&nbsp;zabezpieczenie, brak RCD, strefy mokre (IP), spadek napięcia z&nbsp;geometrii planu, niesymetria faz i&nbsp;więcej.</p></article>
+          <article class="card"><span class="ic">📊</span><h3>Raporty i&nbsp;BOM</h3><p>Lista obwodów, zestawienie materiałów, długości kabli według przekroju i&nbsp;sposobu ułożenia, lista baterii i&nbsp;akumulatorów. CSV i&nbsp;druk.</p></article>
+          <article class="card"><span class="ic">🧵</span><h3>Trasy kabli</h3><p>Zaznacz drogę kabla: w&nbsp;ścianie, w&nbsp;podłodze, w&nbsp;suficie, korytko, rura. Dodawaj i&nbsp;usuwaj punkty trasy albo narysuj kabel narzędziem „Kabel”.</p></article>
+          <article class="card"><span class="ic">🔋</span><h3>Zasilanie bateryjne</h3><p>Oznacz urządzenia bezprzewodowe: rodzaj baterii, żywotność, akumulator awaryjny centrali. Nie obciążają obwodu, a&nbsp;lista baterii trafia do raportu.</p></article>
+          <article class="card"><span class="ic">🧩</span><h3>Własne typy urządzeń</h3><p>Zmodyfikuj istniejące urządzenie (np. gniazdo z&nbsp;USB, inna moc, własny model), zapisz w&nbsp;projekcie i&nbsp;używaj jak zwykłego symbolu.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASE -->
+    <section class="sec alt">
+      <div class="wrap showcase">
+        <div class="row">
+          <div class="row-text">
+            <p class="eyebrow">Walidacja</p>
+            <h2>Błędy widać, zanim zrobi je instalator</h2>
+            <p>Za duży wyłącznik na cienki przewód? Gniazdo bez RCD? Osprzęt IP20 w&nbsp;łazience? Program zgłasza to na bieżąco, z&nbsp;lokalizacją („Oświetlenie, RG 1/13”) i&nbsp;opisem, co zmienić. Kliknięcie ostrzeżenia przenosi do elementu.</p>
+            <p class="note">Reguły to wskazówki projektowe – nie zastępują obliczeń, norm ani uprawnień elektryka.</p>
+          </div>
+          <figure class="shot"><img loading="lazy" src="img/issues-detail.webp" width="840" height="620" alt="Lista problemów: błąd doboru zabezpieczenia do przewodu i ostrzeżenia o zasilaniu oraz stopniu ochrony IP, obok fragment planu z podświetlonym obwodem"></figure>
+        </div>
+        <div class="row rev">
+          <div class="row-text">
+            <p class="eyebrow">Trasy kabli</p>
+            <h2>Wskaż, którędy biegnie kabel</h2>
+            <p>Kable LAN, magistrali i&nbsp;sterowania mają przewód i&nbsp;sposób ułożenia. Kliknij linię, a&nbsp;pojawią się uchwyty: ＋ dodaje punkt trasy, przeciągnięcie go przesuwa, dwuklik usuwa. Długości trafiają do zestawienia przewodów.</p>
+            <ul class="check"><li>narzędzie „Kabel” rysuje trasę od zera</li><li>punkty można wpisać liczbowo</li><li>legenda wzorów linii na planie i&nbsp;w&nbsp;eksporcie</li></ul>
+          </div>
+          <figure class="shot"><img loading="lazy" src="img/cable-zoom.webp" width="1280" height="800" alt="Zbliżenie na plan: zaznaczony kabel LAN z uchwytami punktów trasy"></figure>
+        </div>
+        <div class="row">
+          <div class="row-text">
+            <p class="eyebrow">Alarm Satel i baterie</p>
+            <h2>Katalog Satel i urządzenia bezprzewodowe</h2>
+            <p>Centrale VERSA, PERFECTA i&nbsp;INTEGRA, kontrolery ACU i&nbsp;czujki ABAX&nbsp;2, ekspandery i&nbsp;moduły. Program pilnuje zgodności: czujka radiowa łączy się z&nbsp;kontrolerem radiowym, manipulator pasuje do centrali własnej serii.</p>
+            <p class="note">Wartości w katalogu (moc, akumulatory, baterie) są orientacyjne – zawsze sprawdź dokumentację producenta. Nazwy producentów to znaki towarowe ich właścicieli; narzędzie nie jest z&nbsp;nimi powiązane.</p>
+          </div>
+          <figure class="shot"><img loading="lazy" src="img/satel-detail.webp" width="606" height="530" alt="Biblioteka z grupą Satel ABAX 2 oraz panel właściwości czujki bateryjnej: rodzaj baterii, żywotność, parowanie z kontrolerem ACU"></figure>
+        </div>
+        <div class="row rev">
+          <div class="row-text">
+            <p class="eyebrow">Raporty</p>
+            <h2>Dokumentacja gotowa na koniec</h2>
+            <p>Zestawienie materiałów z&nbsp;parametrami, lista obwodów z&nbsp;obciążeniami, szacowane długości przewodów (także według sposobu ułożenia), baterie do kupienia i&nbsp;wymiany. Wszystko jako CSV albo wydruk.</p>
+          </div>
+          <figure class="shot"><img loading="lazy" src="img/reports-detail.webp" width="1250" height="840" alt="Raport zestawienia materiałów z tabelą długości przewodów, kablami według sposobu ułożenia oraz listą baterii"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="sec" id="galeria">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow">Galeria</p>
+          <h2>Zobacz, jak to wygląda</h2>
+          <p class="sub">Kliknij zrzut, aby powiększyć. Wszystkie obrazy pochodzą z&nbsp;prawdziwej aplikacji i&nbsp;przykładowego projektu mieszkania 62&nbsp;m².</p>
+        </header>
+        <div class="gallery" id="gallery">
+          <figure><button data-full="img/plan.webp" data-cap="Plan z zaznaczonym obwodem gniazd kuchni i panelem właściwości."><img loading="lazy" src="img/plan-detail.webp" width="1018" height="748" alt="Plan mieszkania 62 m² z rozmieszczonymi symbolami; zaznaczony obwód gniazd kuchni jest podświetlony pomarańczową linią zasilania"></button><figcaption>Plan</figcaption></figure>
+          <figure><button data-full="img/panel.webp" data-cap="Rozdzielnica: aparaty modułowe na szynie DIN."><img loading="lazy" src="img/panel-detail.webp" width="1018" height="700" alt="Widok rozdzielnicy: aparaty na szynach DIN z podpisami obwodów"></button><figcaption>Rozdzielnica</figcaption></figure>
+          <figure><button data-full="img/tree.webp" data-cap="Drzewo zasilania z obciążeniami gałęzi."><img loading="lazy" src="img/tree-detail.webp" width="1270" height="800" alt="Drzewo urządzeń od przyłącza do odbiorników z obciążeniem i prądem każdej gałęzi"></button><figcaption>Drzewo</figcaption></figure>
+          <figure><button data-full="img/graph.webp" data-cap="Graf zależności zasilania i powiązań."><img loading="lazy" src="img/graph-detail.webp" width="1270" height="800" alt="Graf zależności zasilania: węzły i krawędzie z możliwością zwijania obwodów"></button><figcaption>Graf</figcaption></figure>
+          <figure><button data-full="img/multi.webp" data-cap="Plan, drzewo i graf obok siebie w trybie skupienia."><img loading="lazy" src="img/multi-sm.webp" width="800" height="450" alt="Trzy widoki obok siebie: plan, drzewo i graf z zaznaczonym obwodem oświetlenia"></button><figcaption>Trzy widoki naraz</figcaption></figure>
+          <figure><button data-full="img/filter.webp" data-cap="Wspólny filtr: wyszukiwanie „bateria” w planie i w drzewie – ten sam wynik w obu widokach."><img loading="lazy" src="img/filter-detail.webp" width="1668" height="880" alt="Plan i drzewo obok siebie z filtrem „bateria”: w obu widokach wyróżnione są urządzenia zasilane bateryjnie"></button><figcaption>Wspólny filtr</figcaption></figure>
+          <figure><button data-full="img/layouts.webp" data-cap="Gotowe układy widoków obok siebie, widoczne panele i ułożenie."><img loading="lazy" src="img/layouts-detail.webp" width="960" height="620" alt="Menu układów: gotowe zestawy widoków (plan + drzewo, plan + graf, trzy widoki), wybór widocznych paneli i ułożenie kolumnami lub wierszami"></button><figcaption>Układy widoków</figcaption></figure>
+          <figure><button data-full="img/issues.webp" data-cap="Lista problemów z lokalizacją i opisem."><img loading="lazy" src="img/issues-detail.webp" width="840" height="620" alt="Lista problemów: błąd doboru zabezpieczenia do przewodu oraz ostrzeżenia o braku zasilania i stopniu ochrony IP w łazience"></button><figcaption>Walidacja na żywo</figcaption></figure>
+          <figure><button data-full="img/cable-route.webp" data-cap="Trasa kabla LAN: sposób ułożenia, punkty trasy, współrzędne."><img loading="lazy" src="img/cable-zoom.webp" width="1280" height="800" alt="Zbliżenie planu: zaznaczony kabel LAN z uchwytami punktów trasy i symbolem plus do dodawania punktów"></button><figcaption>Trasa kabla</figcaption></figure>
+          <figure><button data-full="img/satel.webp" data-cap="Katalog Satel ABAX 2 i czujka bateryjna."><img loading="lazy" src="img/satel-detail.webp" width="606" height="530" alt="Biblioteka z grupą Satel ABAX 2 oraz panel właściwości czujki bateryjnej: rodzaj baterii, żywotność i parowanie z kontrolerem"></button><figcaption>Satel i baterie</figcaption></figure>
+          <figure><button data-full="img/custom-type.webp" data-cap="Własny typ urządzenia: nazwa, symbol, parametry domyślne, podgląd."><img loading="lazy" src="img/custom-type-detail.webp" width="840" height="780" alt="Okno tworzenia własnego typu urządzenia: nazwa, skrót symbolu, parametry domyślne i podgląd symbolu"></button><figcaption>Własne typy</figcaption></figure>
+          <figure><button data-full="img/reports-circuits.webp" data-cap="Lista obwodów z zabezpieczeniem, fazą, przewodem i obciążeniem."><img loading="lazy" src="img/circuits-detail.webp" width="1250" height="840" alt="Raport: lista obwodów z lokalizacją w rozdzielnicy, zabezpieczeniem, fazą, przewodem i paskiem obciążenia"></button><figcaption>Lista obwodów</figcaption></figure>
+          <figure><button data-full="img/tablet.webp" data-cap="Układ responsywny na tablecie."><img loading="lazy" src="img/tablet-sm.webp" width="800" height="1049" alt="Aplikacja w układzie dla tabletu: jeden panel z planem i narzędziami"></button><figcaption>Na tablecie</figcaption></figure>
+        </div>
+        <div class="gifs">
+          <figure><img loading="lazy" src="video/clip-draw.gif" width="720" height="450" alt="Animacja: rysowanie ścian, pomieszczeń i ustawianie rozdzielnicy"><figcaption>Animacja: plan od zera</figcaption></figure>
+          <figure><img loading="lazy" src="video/clip-views.gif" width="720" height="450" alt="Animacja: drzewo, graf, widoki obok siebie i filtr"><figcaption>Animacja: widoki i filtr</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- DLA KOGO -->
+    <section class="sec alt">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow">Dla kogo</p>
+          <h2>Zrobiony do domowych projektów</h2>
+        </header>
+        <div class="cards three">
+          <article class="card"><h3>Budujesz lub remontujesz dom</h3><p>Zaplanuj obwody, rozdzielnicę i&nbsp;rozmieszczenie gniazd, zanim zaczną się kucie ścian i&nbsp;zamówienia. Przygotuj listę materiałów do rozmowy z&nbsp;wykonawcą.</p></article>
+          <article class="card"><h3>Majsterkujesz ze smart home</h3><p>Narysuj, co jest z&nbsp;czym połączone: sterowanie, magistrale, radio i&nbsp;sieć. Sprawdź, ile kabla i&nbsp;baterii potrzebujesz.</p></article>
+          <article class="card"><h3>Uczysz się</h3><p>Zobacz, jak wygląda zasilanie od przyłącza po odbiornik i&nbsp;co zgłaszają reguły. Dobre do nauki i&nbsp;eksperymentów.</p></article>
+        </div>
+        <p class="note wide-note">Wynik pracy w&nbsp;programie to pomoc w&nbsp;planowaniu i&nbsp;rozmowie z&nbsp;wykonawcą – nie jest dokumentacją projektową w&nbsp;rozumieniu prawa budowlanego ani nie zastępuje uprawnień elektryka.</p>
+      </div>
+    </section>
+
+    <!-- LICENCJA -->
+    <section class="sec" id="licencja">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow">Licencja</p>
+          <h2>Free for personal use</h2>
+          <p class="sub">Za darmo do użytku osobistego i&nbsp;niekomercyjnego. Do zastosowań zawodowych potrzebna jest osobna licencja.</p>
+        </header>
+        <div class="lic">
+          <div class="lic-col ok"><h3>✔ Wolno bezpłatnie</h3><ul><li>projektować instalację we własnym domu, mieszkaniu, garażu, ogrodzie</li><li>pomagać rodzinie i&nbsp;znajomym – bez wynagrodzenia</li><li>uczyć się: szkoła, studia, kursy niedochodowe</li><li>zmieniać kod na własny użytek</li><li>zachować swoje projekty i&nbsp;eksporty – należą do Ciebie</li></ul></div>
+          <div class="lic-col no"><h3>✖ Wymaga osobnej licencji</h3><ul><li>odpłatne projekty, wyceny i&nbsp;dokumentacje dla klientów</li><li>użycie w&nbsp;firmie, instytucji lub w&nbsp;pracy zarobkowej na rzecz pracodawcy czy zleceniodawcy</li><li>sprzedaż, wynajem, hosting jako usługa dla innych</li><li>rozpowszechnianie aplikacji lub jej zmodyfikowanych wersji</li><li>usuwanie informacji o&nbsp;prawach autorskich</li></ul></div>
+          <div class="lic-col warn"><h3>⚠ Bezpieczeństwo</h3><p>Wyniki obliczeń i&nbsp;walidacji są wspomagające. <b>Nie zastępują projektu, norm ani uprawnień elektryka.</b> Prace przy instalacji wykonuj zgodnie z&nbsp;prawem – mogą wymagać osoby z&nbsp;uprawnieniami.</p></div>
+        </div>
+        <details class="lic-ex"><summary>Przykłady granicznych sytuacji</summary>
+          <div class="lic-ex-grid">
+            <div><h4>✔ Dozwolone</h4><ul><li>projekt własnego domu lub mieszkania, w którym nie prowadzisz działalności gospodarczej</li><li>przekazanie wykonawcy wyeksportowanego pliku, listy materiałów lub rysunku – to Twoje pliki</li><li>uczeń i student wykonujący własne zadania; nauczyciel pokazujący narzędzie uczniom na zajęciach dydaktycznych (to nie jest „praca zarobkowa”, o ile nie wykonuje przy nim zleceń zarobkowych)</li><li>własne zrzuty ekranu i opis swojego projektu w niemonetyzowanych publikacjach, z podaniem źródła; link do strony narzędzia</li></ul></div>
+            <div><h4>✖ Wymaga osobnej licencji</h4><ul><li>projekt lub wycena dla klienta, także „przy okazji” za opłatą</li><li>firma, instalator, projektant, deweloper lub inwestor budujący na sprzedaż</li><li>wynajem nieruchomości prowadzony jako działalność gospodarcza</li><li>placówka lub instytucja jako narzędzie pracy</li><li>filmy, kursy i blogi z przychodami reklamowymi, sponsorskimi lub sprzedażowymi, w których narzędzie jest pokazywane</li><li>hosting dla innych osób i rozpowszechnianie kopii</li></ul></div>
+          </div>
+          <p class="small">Pełne brzmienie: <a href="LICENSE.txt">LICENSE.txt</a>.</p></details>
+        <p class="lic-links"><a class="btn btn-ghost" href="LICENSE.txt">Pełny tekst licencji (PL / EN)</a> <a class="btn btn-ghost" href="licencja-komercyjna.html">Licencja komercyjna</a> <span>Licencja komercyjna: <a href="mailto:elektro-plan@niemojewski.eu" data-cfg-mail>elektro-plan@niemojewski.eu</a></span></p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="sec alt" id="faq">
+      <div class="wrap narrow">
+        <header class="sec-head"><p class="eyebrow">FAQ</p><h2>Najczęstsze pytania</h2></header>
+        <details><summary>Czy muszę coś instalować albo zakładać konto?</summary><p>Nie. Aplikacja działa w&nbsp;przeglądarce (komputer lub tablet). Otwierasz stronę i&nbsp;projektujesz. Nie ma konta ani logowania.</p></details>
+        <details><summary>Gdzie są moje dane?</summary><p>Projekt jest zapisywany w&nbsp;pamięci przeglądarki na Twoim urządzeniu i&nbsp;w&nbsp;plikach JSON, które sam zapisujesz. Aplikacja nie wysyła projektu na żaden serwer. Statystyki użycia (liczby, wartości z list zamkniętych i losowe identyfikatory – bez nazw i treści projektu) wysyła wyłącznie za Twoją zgodą – domyślnie są wyłączone, szczegóły: <a href="prywatnosc.html">Prywatność</a>. Projekt zapisuje się automatycznie w&nbsp;przeglądarce, a&nbsp;po zastąpieniu go innym poprzednią wersję przywrócisz przyciskiem „Przywróć poprzedni projekt” w&nbsp;menu Eksport. Mimo to rób kopie plików JSON.</p></details>
+        <details><summary>Czy mogę zaufać wynikom walidacji?</summary><p>Traktuj je jako wskazówki, które wyłapują typowe błędy. Nie zastępują obliczeń, norm ani uprawnień elektryka – ostateczne decyzje podejmuje osoba z&nbsp;uprawnieniami.</p></details>
+        <details><summary>Czy katalog Satel jest dokładny?</summary><p>Nazwy modeli i&nbsp;zasady parowania (np. radio ABAX&nbsp;2 z&nbsp;kontrolerem ACU) są odwzorowane, ale moce, akumulatory i&nbsp;baterie są orientacyjne. Zawsze sprawdź dokumentację producenta; pole „Model / producent” i&nbsp;wartości możesz edytować, a&nbsp;własne typy tworzyć samodzielnie.</p></details>
+        <details><summary>Czy mogę używać narzędzia w&nbsp;pracy lub dla klientów?</summary><p>Nie na podstawie licencji „free for personal use”. Do zastosowań zawodowych potrzebna jest osobna licencja – <a href="#licencja">zobacz licencję</a>.</p></details>
+        <details><summary>Czy działa na telefonie i&nbsp;tablecie?</summary><p>Interfejs ma układ dostosowany do tabletu (większe uchwyty, długie przytrzymanie zamiast prawego przycisku), a&nbsp;na telefonie działa w&nbsp;układzie jednopanelowym. Najwygodniej jednak na komputerze – szczególnie przy rysowaniu planu i&nbsp;układzie kilku widoków naraz.</p></details>
+        <details><summary>Jak zgłosić błąd lub pomysł?</summary><p>W&nbsp;aplikacji kliknij <b>💬 Zgłoś</b> (górny pasek; pełna nazwa „Zgłoś błąd / pomysł” jest w pasku stanu, w Pomocy i – na telefonie – w menu ⋯). Program przygotuje zgłoszenie z&nbsp;podglądem treści i&nbsp;otworzy je na GitHubie; opcjonalnie dołączysz zrzut ekranu. <a href="#zglos">Więcej</a>.</p></details>
+        <details><summary>Czy program zbiera statystyki użycia?</summary><p>Tylko jeśli sam się zgodzisz. Przy pierwszym uruchomieniu możesz wybrać poziom podstawowy (czas pracy, liczba projektów i elementów) albo rozszerzony (jak korzystasz z funkcji), albo odmówić – domyślnie nic nie jest wysyłane. Nigdy nie wysyłamy nazw, adresów ani treści projektu; każda instalacja i projekt mają tylko losowy identyfikator, a wysyłane zdarzenia możesz podejrzeć na żywo w oknie „Prywatność i statystyki”. Szczegóły: <a href="prywatnosc.html">Prywatność</a>.</p></details>
+        <details><summary>Czy zgłoszenie wysyła moje dane lub projekt?</summary><p>Nie automatycznie. Treść widzisz w&nbsp;podglądzie, a&nbsp;zgłoszenie publikujesz dopiero Ty na swoim koncie GitHub – jest ono publiczne. Projekt nie jest dołączany (możesz go dodać ręcznie), a&nbsp;zrzut ekranu jest opcjonalny. Szczegóły: <a href="prywatnosc.html">Prywatność</a>.</p></details>
+        <details><summary>Co mogę wyeksportować?</summary><p>Projekt jako plik JSON, plan piętra jako SVG lub PNG (z&nbsp;legendą i&nbsp;skalą), listę obwodów i&nbsp;zestawienie materiałów jako CSV oraz wydruk bieżącego widoku.</p></details>
+        <details><summary>Jak zacząć?</summary><p>Możesz zacząć od przykładowego mieszkania („Nowy → Projekt przykładowy”) i&nbsp;je zmieniać albo od pustego planu. W&nbsp;programie jest pomoc (klawisz ?) ze skrótami, a&nbsp;każdą zmianę można cofnąć (Ctrl+Z).</p></details>
+      </div>
+    </section>
+
+    <!-- ZGŁOSZENIA -->
+    <section class="sec" id="zglos">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow">Twoje uwagi</p>
+          <h2>Zgłoś błąd lub pomysł</h2>
+          <p class="sub">Program rozwija się dzięki zgłoszeniom użytkowników. Zgłoś błąd, zaproponuj funkcję albo zadaj pytanie – na GitHubie, publicznie, żeby inni mogli się dołączyć i&nbsp;nie powtarzać zgłoszeń.</p>
+        </header>
+        <div class="cards three">
+          <a class="card card-link" href="https://github.com/jazn/elektro-plan/issues/new?labels=bug&amp;title=%5BB%C5%82%C4%85d%5D%20" rel="noopener"><span class="ic">🐞</span><h3>Zgłoś błąd</h3><p>Coś nie działa albo liczy się źle? Opisz kroki, które do tego prowadzą, i co się stało.</p></a>
+          <a class="card card-link" href="https://github.com/jazn/elektro-plan/issues/new?labels=enhancement&amp;title=%5BPomys%C5%82%5D%20" rel="noopener"><span class="ic">💡</span><h3>Zaproponuj pomysł</h3><p>Czego brakuje w&nbsp;projektowaniu Twojej instalacji? Opisz sytuację, w&nbsp;której by się przydało.</p></a>
+          <a class="card card-link" href="https://github.com/jazn/elektro-plan/issues/new?labels=question&amp;title=%5BPytanie%5D%20" rel="noopener"><span class="ic">❓</span><h3>Zadaj pytanie</h3><p>Nie wiesz, jak coś zrobić? Zapytaj – odpowiedź pomoże też innym.</p></a>
+        </div>
+        <p class="note-line">Najwygodniej zrobić to prosto z aplikacji: przycisk <b>💬 Zgłoś</b> na górnym pasku (na telefonie: menu ⋯) sam wypełnia formularz (wersja programu, przeglądarka) i&nbsp;pozwala opcjonalnie dołączyć zrzut ekranu. Nic nie jest wysyłane automatycznie. <a href="https://github.com/jazn/elektro-plan/issues" rel="noopener">Zobacz istniejące zgłoszenia</a> · <a href="prywatnosc.html">Prywatność</a></p>
+        <p class="note-line small">Zgłoszenia na GitHubie są publiczne i&nbsp;wymagają konta GitHub. Nie podawaj w&nbsp;nich adresów, danych osobowych ani haseł i&nbsp;kodów (np. do alarmu). Bez konta napisz na <a href="mailto:elektro-plan@niemojewski.eu" data-cfg-mail>elektro-plan@niemojewski.eu</a>; luki bezpieczeństwa zgłaszaj tylko prywatnie, e-mailem.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="wrap cta-in">
+        <h2>Zacznij projektować – bez instalacji i konta</h2>
+        <p>Otwórz aplikację w przeglądarce. Za darmo do użytku osobistego.</p>
+        <a class="btn btn-light btn-lg" href="app/" data-app-link>Uruchom aplikację</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <div><b>Elektro&nbsp;Plan</b><p>© 2026 <span data-cfg-author>Mateusz 'mojes' Niemojewski</span>. Licencja: free for personal use.</p><p class="small">Wersja v0.2.0 · licencja 1.3</p></div>
+      <div><p class="small">SATEL, INTEGRA, VERSA, PERFECTA i&nbsp;ABAX są znakami towarowymi ich właścicieli. Elektro Plan nie jest powiązany z&nbsp;producentem ani przez niego zatwierdzony. Parametry w&nbsp;katalogu są orientacyjne.</p></div>
+      <div class="small"><a href="LICENSE.txt">Licencja</a> · <a href="licencja-komercyjna.html">Licencja komercyjna</a> · <a href="prywatnosc.html">Prywatność</a> · <a href="blokada-statystyk.html">Odblokowanie statystyk</a> · <a href="#faq">FAQ</a> · <a href="#zglos">Zgłoś błąd</a> · <a href="mailto:elektro-plan@niemojewski.eu" data-cfg-mail>Kontakt</a></div>
+    </div>
+  </footer>
+
+  <dialog id="lightbox" aria-label="Podgląd zrzutu ekranu">
+    <button class="lb-close" aria-label="Zamknij" data-close>✕</button>
+    <button class="lb-nav prev" aria-label="Poprzedni" data-prev>‹</button>
+    <figure><img alt="" id="lb-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><figcaption id="lb-cap"></figcaption></figure>
+    <button class="lb-nav next" aria-label="Następny" data-next>›</button>
+  </dialog>
+
+  <script src="site-config.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Odblokowanie statystyk – Elektro Plan</title>
+  <meta name="description" content="Instrukcja krok po kroku: jak wyłączyć uBlock Origin i Enhanced Tracking Protection (Firefox) dla Elektro Plan, jeśli chcesz wysyłać statystyki użycia.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="canonical" href="https://elektro-plan.pl/blokada-statystyk.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="Elektro Plan">
+  <meta property="og:url" content="https://elektro-plan.pl/blokada-statystyk.html">
+  <meta property="og:title" content="Odblokowanie statystyk – Elektro Plan">
+  <meta property="og:description" content="Instrukcja krok po kroku: jak wyłączyć uBlock Origin i Enhanced Tracking Protection (Firefox) dla Elektro Plan, jeśli chcesz wysyłać statystyki użycia.">
+  <meta property="og:image" content="https://elektro-plan.pl/social/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Elektro Plan: plan mieszkania z rozmieszczonymi symbolami elektryki">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Odblokowanie statystyk – Elektro Plan">
+  <meta name="twitter:description" content="Instrukcja krok po kroku: jak wyłączyć uBlock Origin i Enhanced Tracking Protection (Firefox) dla Elektro Plan, jeśli chcesz wysyłać statystyki użycia.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563eb'/%3E%3Cpath d='M18 5L9 18h6l-1 9 9-13h-6z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Przejdź do treści</a>
+  <header class="top"><div class="wrap top-in">
+    <a class="brand" href="index.html" aria-label="Elektro Plan – strona główna"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#2563eb"/><path d="M18 5L9 18h6l-1 9 9-13h-6z" fill="#fff"/></svg><b>Elektro&nbsp;Plan</b></a>
+    <nav class="nav open-static" aria-label="Nawigacja"><a href="index.html#licencja">Licencja</a><a href="prywatnosc.html">Prywatność</a><a href="index.html#zglos">Zgłoś błąd</a><a class="btn btn-primary btn-sm" href="app/"><span class="bl">Uruchom aplikację</span><span class="bs">Aplikacja</span></a></nav>
+  </div></header>
+
+  <main id="main" class="wrap narrow doc">
+    <h1>Odblokowanie statystyk</h1>
+    <p>Statystyki użycia są włączone (dane pseudonimowe, bez nazw i treści projektu), ale <b>uBlock Origin</b> albo <b>ochrona przed śledzeniem</b> w przeglądarce (np. Enhanced Tracking Protection w Firefoksie) blokuje połączenie z serwerem statystyk (<code>gateway.umami.is</code>). Dopóki blokada działa, nic nie jest wysyłane. Poniżej instrukcje, jak ją wyłączyć <b>tylko dla tej aplikacji</b>.</p>
+    <p class="upd"><b>Nie chcesz wysyłać statystyk?</b> Nic nie musisz robić – blokada chroni Twoją prywatność i program działa tak samo. Statystyki możesz też w każdej chwili wyłączyć: menu ⋯ → „Prywatność i statystyki”. Zobacz <a href="prywatnosc.html">Prywatność</a>.</p>
+
+    <h2>uBlock Origin (Firefox, Chrome, Edge)</h2>
+    <ol>
+      <li>Otwórz aplikację Elektro Plan (<code>elektro-plan.pl/app/</code>).</li>
+      <li>Kliknij ikonę uBlock Origin na pasku narzędzi przeglądarki (czerwona tarcza; jeśli jej nie widać, kliknij ikonę puzzla/menu rozszerzeń i wybierz uBlock Origin).</li>
+      <li>Kliknij <b>duży przycisk zasilania</b> na środku okienka. Zmieni kolor z niebieskiego na szary – uBlock jest wyłączony <b>tylko dla tej witryny</b>.</li>
+      <li>Odśwież stronę (<b>F5</b>).</li>
+    </ol>
+    <p><b>Jeśli to nie pomaga</b> (uBlock blokuje jeszcze połączenia do serwera statystyk): otwórz panel uBlock (ikona → ikona zębatki „Otwórz panel kontrolny”) → zakładka <b>Moje filtry</b> → dopisz w nowej linii <code>@@||gateway.umami.is^</code> → kliknij <b>Zastosuj zmiany</b> → odśwież aplikację.</p>
+
+    <h2>Enhanced Tracking Protection (Firefox)</h2>
+    <ol>
+      <li>Otwórz aplikację Elektro Plan.</li>
+      <li>Kliknij <b>ikonę tarczy</b> po lewej stronie paska adresu.</li>
+      <li>Wyłącz przełącznik <b>„Enhanced Tracking Protection”</b> (lub „Ulepszona ochrona przed śledzeniem”) dla tej witryny. Strona odświeży się sama.</li>
+    </ol>
+    <p>Inaczej: <b>Ustawienia</b> → <b>Prywatność i bezpieczeństwo</b> → <b>Ulepszona ochrona przed śledzeniem</b> → <b>Zarządzaj wyjątkami…</b> → wpisz adres <code>https://elektro-plan.pl</code> → <b>Dozwól</b> → <b>Zapisz zmiany</b>. W tej samej sekcji możesz też obniżyć poziom ochrony z „Ścisła” do „Standardowa”, ale zwykle wystarczy wyjątek dla tej strony.</p>
+
+    <h2>Inne przeglądarki i narzędzia</h2>
+    <ul>
+      <li><b>Brave:</b> ikona lwa przy pasku adresu → wyłącz „Shields” dla tej witryny.</li>
+      <li><b>Safari:</b> menu Safari → Ustawienia → Prywatność – wyłącz „Zapobiegaj śledzeniu między witrynami” albo dodaj wyjątek dla strony.</li>
+      <li><b>AdGuard, Pi-hole, blokada DNS w routerze:</b> dodaj wyjątek dla domeny <code>gateway.umami.is</code>.</li>
+    </ul>
+
+    <h2>Jak sprawdzić, że działa</h2>
+    <ol>
+      <li>Po wyłączeniu blokady odśwież aplikację i popracuj chwilę (np. dodaj kilka elementów).</li>
+      <li>Otwórz menu <b>⋯ → „Prywatność i statystyki”</b> i rozwiń <b>„Podgląd”</b> – zobaczysz wysyłane zdarzenia. Komunikat o blokadzie w oknie i żółta karta w panelu po prawej zniknie po pierwszym udanym połączeniu.</li>
+    </ol>
+    <p class="upd">Blokadę możesz później włączyć z powrotem – statystyki wysyłają się wtedy tylko, dopóki wyjątek obowiązuje.</p>
+  </main>
+
+  <footer class="foot"><div class="wrap foot-in">
+    <div><b>Elektro&nbsp;Plan</b><p>© 2026 <span>Mateusz 'mojes' Niemojewski</span>. Licencja: free for personal use.</p><p class="small">Wersja v0.2.0 · licencja 1.3</p></div>
+    <div class="small"><a href="LICENSE.txt">Licencja</a> · <a href="licencja-komercyjna.html">Licencja komercyjna</a> · <a href="prywatnosc.html">Prywatność</a> · <a href="blokada-statystyk.html">Odblokowanie statystyk</a> · <a href="index.html#faq">FAQ</a> · <a href="index.html#zglos">Zgłoś błąd</a> · <a href="mailto:elektro-plan@niemojewski.eu">Kontakt</a></div>
+  </div></footer>
+</body>
+</html>

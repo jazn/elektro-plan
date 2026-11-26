@@ -1,0 +1,49 @@
+<!doctype html>
+<!-- Elektro Plan © 2026 Mateusz 'mojes' Niemojewski. Licencja: free for personal use (patrz plik LICENSE). -->
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' blob: https://gateway.umami.is; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elektro Plan</title>
+  <meta name="description" content="Wizualny projektant instalacji elektrycznej, alarmowej i smart home: plan, rozdzielnica, drzewo i graf urządzeń.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563eb'/%3E%3Cpath d='M18 5L9 18h6l-1 9 9-13h-6z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="app.8677b3aafc.css">
+</head>
+<body>
+  <a class="skip" href="#center">Przejdź do edytora</a>
+  <div id="print-head" class="print-head"></div>
+  <header class="topbar">
+    <div class="brand" aria-label="Elektro Plan"><svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#2563eb"/><path d="M18 5L9 18h6l-1 9 9-13h-6z" fill="#fff"/></svg><b>Elektro&nbsp;Plan</b></div>
+    <input id="project-name" class="project-name" aria-label="Nazwa projektu" spellcheck="false">
+    <button id="btn-lib" class="btn small drawer-btn" aria-expanded="false" aria-controls="left" aria-label="Biblioteka symboli">☰<span class="lbl"> Biblioteka</span></button>
+    <nav id="nav" class="nav" role="tablist" aria-label="Widoki"></nav>
+    <button id="btn-layout" class="btn small layout-btn" title="Pokaż kilka widoków obok siebie (np. plan + drzewo + graf). Skrót: Shift+klik na zakładce" aria-haspopup="menu"><span class="ico" aria-hidden="true">⧉</span> <span class="lbl">Widoki obok siebie</span> ▾</button>
+    <button id="btn-focus" class="btn small layout-btn" title="Tryb skupienia: ukryj bibliotekę i właściwości, żeby dać więcej miejsca widokom (wracają jako szuflady)" aria-pressed="false">⛶ <span class="lbl">Skupienie</span></button>
+    <div class="top-actions">
+      <button id="undo" class="icon-btn" title="Cofnij (Ctrl+Z)" aria-label="Cofnij"><svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4L3 8l4 4M3 8h8a5 5 0 010 10H8"/></svg></button>
+      <button id="redo" class="icon-btn" title="Ponów (Ctrl+Y)" aria-label="Ponów"><svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4l4 4-4 4M17 8H9a5 5 0 000 10h3"/></svg></button>
+      <span class="sep"></span>
+      <button id="issue-pill" class="pill" aria-label="Problemy w projekcie"></button>
+      <button id="btn-new" class="btn small">Nowy</button>
+      <button id="btn-open" class="btn small">Otwórz</button>
+      <button id="btn-save" class="btn small primary">Zapisz plik</button>
+      <button id="btn-export" class="btn small" aria-haspopup="menu">Eksport ▾</button>
+      <button id="btn-insp" class="btn small drawer-btn" aria-expanded="false" aria-controls="right" aria-label="Właściwości">⚙<span class="lbl"> Właściwości</span></button>
+      <button id="btn-feedback" class="btn small" title="Zgłoś błąd lub pomysł (GitHub) – opcjonalnie ze zrzutem ekranu" aria-label="Zgłoś błąd lub pomysł"><span class="ico" aria-hidden="true">💬</span><span class="fdbk-long"> Zgłoś błąd / pomysł</span><span class="fdbk-short"> Zgłoś</span></button>
+      <button id="btn-more" class="icon-btn" aria-label="Menu" title="Menu">⋯</button>
+      <button id="btn-help" class="icon-btn" title="Pomoc i skróty (?)" aria-label="Pomoc">?</button>
+    </div>
+  </header>
+  <div id="filterbar" class="filterbar" role="search" aria-label="Filtr widoków"></div>
+  <aside id="splittip" class="splittip" role="region" aria-label="Podpowiedź: widoki obok siebie" hidden></aside>
+  <aside id="samplebar" class="splittip samplebar" role="status" hidden></aside>
+  <main id="app" class="app">
+    <div id="left" class="col-left"></div>
+    <div id="center" class="col-center" role="tabpanel" tabindex="-1"></div>
+    <div id="right" class="col-right"></div>
+  </main>
+  <footer class="statusbar"><span id="status"></span><span id="saved"></span><button id="ver" class="verlink" type="button"></button><button id="fdbk-link" class="verlink report-link" type="button" title="Zgłoś błąd lub pomysł (GitHub)"><span class="rl-long">💬 Zgłoś błąd / pomysł</span><span class="rl-short">💬 Zgłoś</span></button></footer>
+  <script type="module" src="app.d41ad03a6e.js"></script>
+</body>
+</html>

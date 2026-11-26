@@ -1,0 +1,118 @@
+ELEKTRO PLAN – LICENCJA DO UŻYTKU OSOBISTEGO (FREE FOR PERSONAL USE), wersja 1.3
+(English summary at the end of this file.)
+
+Copyright (c) 2026 Mateusz 'mojes' Niemojewski. Wszelkie prawa zastrzeżone,
+z wyjątkiem praw wyraźnie udzielonych poniżej.
+
+1. CO WOLNO (BEZPŁATNIE)
+   Masz prawo bezpłatnie uruchamiać, kopiować i używać tego oprogramowania ("Oprogramowanie") wyłącznie do
+   użytku osobistego i niekomercyjnego, w szczególności do:
+   a) projektowania i dokumentowania instalacji elektrycznej, alarmowej i smart home we własnym domu, mieszkaniu,
+      garażu, ogrodzie lub działce rekreacyjnej oraz w nieruchomości rodziny i znajomych, o ile nie otrzymujesz za to
+      wynagrodzenia;
+   b) hobby, nauki i samokształcenia, zajęć edukacyjnych niedochodowych (uczeń, student, uczestnik kursu);
+   c) wprowadzania własnych zmian w kodzie na własny użytek (bez ich dalszego rozpowszechniania).
+   Możesz tworzyć kopie zapasowe oraz uruchamiać Oprogramowanie na dowolnej liczbie własnych urządzeń.
+
+   PRZYKŁADY (dla jasności; nie wyczerpują sytuacji):
+   - Dozwolone: projekt instalacji we własnym domu lub mieszkaniu, w którym nie prowadzisz działalności gospodarczej;
+     przekazanie wykonawcy wyeksportowanego pliku, listy materiałów lub rysunku – Twoje pliki należą do Ciebie;
+     uczeń lub student wykonujący własne zadania; nauczyciel lub wykładowca pokazujący narzędzie uczniom na
+     zajęciach dydaktycznych (to nie jest „praca zarobkowa” w rozumieniu pkt 2a, o ile nie wykonuje przy jego
+     pomocy zleceń zarobkowych, a placówka nie używa go jako narzędzia pracy);
+     udostępnienie znajomemu linku do strony Oprogramowania; własne zrzuty ekranu i opis swojego projektu
+     w niemonetyzowanych publikacjach, z podaniem źródła.
+   - Wymaga osobnej licencji: projekt lub wycena dla klienta (także gdy robisz go „przy okazji” za opłatą);
+     użycie przez firmę, instalatora, projektanta, dewelopera lub inwestora budującego na sprzedaż; prowadzenie
+     wynajmu nieruchomości jako działalności gospodarczej i użycie narzędzia do jej potrzeb; użycie przez placówkę
+     lub instytucję jako narzędzia pracy; filmy, kursy, blogi i inne treści z przychodami reklamowymi,
+     sponsorskimi lub sprzedażowymi, w których Oprogramowanie jest pokazywane lub używane (wymagają licencji
+     lub zgody autorów); oferowanie Oprogramowania jako usługi (hosting dla innych).
+
+2. CZEGO NIE WOLNO BEZ OSOBNEJ, PISEMNEJ LICENCJI
+   a) Użycia komercyjnego: wykonywania z użyciem Oprogramowania odpłatnych usług (projekt, wycena, kosztorys,
+      montaż, nadzór, audyt), użycia w działalności gospodarczej, w firmie lub instytucji, w pracy zarobkowej (także na etacie) na rzecz pracodawcy lub zleceniodawcy
+      oraz do przygotowywania ofert i dokumentacji dla klientów.
+   b) Sprzedaży, wynajmu, dzierżawy, sublicencjonowania Oprogramowania lub jego części, a także oferowania go jako
+      usługi (hosting, SaaS, osadzanie w produkcie) osobom trzecim.
+   c) Rozpowszechniania Oprogramowania lub jego zmodyfikowanych wersji (w tym publicznych forków i kopii na
+      własnym hostingu dla innych osób). Możesz natomiast udostępnić link do oficjalnej strony Oprogramowania,
+      a prywatne kopie i zmiany na własny użytek są dozwolone (pkt 1).
+   d) Usuwania lub zmieniania informacji o prawach autorskich i niniejszej licencji.
+   e) Wykorzystywania Oprogramowania lub jego kodu do trenowania lub dostrajania modeli uczenia maszynowego
+      oferowanych komercyjnie.
+   Udostępnienie zbudowanej wersji Oprogramowania w publicznym serwisie (np. GitHub Pages) nie udziela Ci żadnych
+   praw wynikających z regulaminu tego serwisu (np. do forkowania, kopiowania czy ponownej publikacji) – poza
+   wyświetlaniem i korzystaniem z Oprogramowania zgodnie z niniejszą licencją.
+
+3. TWOJE DANE I PROJEKTY (PRYWATNOŚĆ)
+   Pliki projektów (JSON) oraz eksporty (SVG, PNG, CSV) tworzone przez Ciebie należą do Ciebie; ta licencja nie
+   rości sobie do nich żadnych praw. Oprogramowanie działa w przeglądarce, a projekt jest przechowywany lokalnie
+   na Twoim urządzeniu (pamięć przeglądarki i pliki, które zapisujesz). Oprogramowanie nie wysyła projektów do
+   żadnego serwera. Domyślnie nie zbiera też żadnych danych; wyłącznie za Twoją wyraźną zgodą (wybór poziomu w
+   programie, możliwy do cofnięcia w każdej chwili) wysyła pseudonimowe statystyki użycia (liczby i wartości z
+   zamkniętych list oraz losowe identyfikatory instalacji i projektu – bez nazw, adresów i treści projektu) do
+   narzędzia analitycznego Umami (z samego połączenia odbiorca widzi też adres IP i nagłówki przeglądarki); szczegóły i pełny podgląd wysyłanych danych są w programie oraz na stronie
+   „Prywatność”. Sygnały „nie śledź” (Do Not Track, Global Privacy Control) wyłączają statystyki bez pytania.
+   Serwer, na którym ktoś hostuje stronę, może zapisywać standardowe dzienniki żądań (logi) – tego dotyczy jego
+   polityka prywatności. Poza opcjonalnymi statystykami jedyne połączenie, które Oprogramowanie nawiązuje samo,
+   to sprawdzenie, czy na serwerze nie ma nowszej wersji (pobranie pliku index.html z tego
+   samego serwera, bez danych projektu). Zasady dotyczące zgłoszeń opisuje sekcja 9, a pełną informację o
+   prywatności – strona „Prywatność” (prywatnosc.html) w serwisie, z którego uruchamiasz Oprogramowanie.
+
+4. ZNAKI TOWAROWE I KATALOGI PRODUCENTÓW
+   Nazwy i oznaczenia producentów (m.in. SATEL, INTEGRA, VERSA, PERFECTA, ABAX) są znakami towarowymi ich
+   właścicieli i służą wyłącznie do opisu zgodności. Oprogramowanie nie jest powiązane z tymi producentami ani
+   przez nich zatwierdzone. Parametry urządzeń w katalogu (moc, akumulatory, baterie) są orientacyjne – zawsze
+   weryfikuj je w dokumentacji producenta.
+
+5. BEZPIECZEŃSTWO – WAŻNE
+   Wyniki obliczeń i walidacji (obciążenia, spadki napięcia, dobór zabezpieczeń i przewodów, długości kabli)
+   mają charakter wspomagający i orientacyjny. NIE zastępują projektu, obliczeń, norm, przepisów ani uprawnień
+   elektryka. Prace przy instalacji elektrycznej wykonuj zgodnie z prawem – mogą wymagać osoby z uprawnieniami.
+
+6. BRAK GWARANCJI I OGRANICZENIE ODPOWIEDZIALNOŚCI
+   OPROGRAMOWANIE JEST DOSTARCZANE "TAK, JAK JEST", BEZ JAKIEJKOLWIEK GWARANCJI, WYRAŹNEJ LUB DOROZUMIANEJ,
+   W TYM GWARANCJI PRZYDATNOŚCI DO OKREŚLONEGO CELU I NIENARUSZANIA PRAW. W MAKSYMALNYM ZAKRESIE DOZWOLONYM
+   PRZEZ PRAWO AUTORZY NIE PONOSZĄ ODPOWIEDZIALNOŚCI ZA SZKODY WYNIKŁE Z UŻYCIA LUB NIEMOŻNOŚCI UŻYCIA
+   OPROGRAMOWANIA, W TYM ZA SZKODY MAJĄTKOWE, UTRATĘ DANYCH ORAZ SKUTKI BŁĘDNEGO WYKONANIA INSTALACJI.
+
+7. WYGAŚNIĘCIE I WERSJE LICENCJI
+   Naruszenie licencji powoduje automatyczne wygaśnięcie udzielonych praw. Po wygaśnięciu przestajesz używać
+   Oprogramowania i usuwasz jego kopie (Twoje projekty i eksporty zachowujesz). Autorzy mogą publikować nowe wersje
+   licencji dla nowych wydań Oprogramowania; do już otrzymanej wersji stosuje się licencja, z którą ją otrzymałeś.
+
+8. LICENCJE KOMERCYJNE
+   Chcesz używać Oprogramowania zawodowo lub w firmie? Skontaktuj się: elektro-plan@niemojewski.eu.
+
+9. ZGŁOSZENIA BŁĘDÓW, POMYSŁY I OPINIE
+   Oprogramowanie pozwala przygotować zgłoszenie błędu, pomysłu lub pytania w publicznym serwisie GitHub
+   (adres repozytorium podaje strona programu). Nic nie jest wysyłane automatycznie: treść widzisz w podglądzie,
+   a zgłoszenie publikujesz sam, na własnym koncie GitHub, co podlega regulaminowi i polityce prywatności tego
+   serwisu; zgłoszenia są publiczne. Nie zamieszczaj w nich danych osobowych, adresów, haseł ani kodów dostępu
+   (np. do alarmu) – dotyczy to także zrzutów ekranu, komunikatów błędów programu (mogą zawierać fragmenty
+   Twoich danych; są domyślnie niedołączane) i plików projektu, które dołączasz z własnej woli.
+   Zgłaszając błąd, pomysł lub opinię (dalej: "Zgłoszenie"), oświadczasz, że masz prawo do jego treści, oraz
+   udzielasz autorom nieodpłatnej, niewyłącznej, nieograniczonej w czasie i terytorialnie licencji na jej
+   wykorzystanie, w tym do rozwoju, zmiany i rozpowszechniania Oprogramowania i jego dokumentacji, bez obowiązku
+   wynagrodzenia, wskazania Twojego nazwiska ani uwzględnienia Zgłoszenia. Zgłoszenie nie przenosi na Ciebie
+   żadnych praw do Oprogramowania ani nie jest licencją komercyjną. Nie zgłaszaj treści cudzych, objętych
+   tajemnicą ani kodu źródłowego, do którego nie masz praw. Luki bezpieczeństwa zgłaszaj wyłącznie prywatnie, na
+   adres z sekcji 8 lub przez zakładkę Security repozytorium GitHub, nie w publicznym Zgłoszeniu.
+
+10. PRAWO WŁAŚCIWE
+   Prawo polskie. Jeśli którekolwiek postanowienie okaże się nieważne, pozostałe zachowują moc. Postanowienia
+   o wyłączeniu odpowiedzialności nie ograniczają praw konsumenta wynikających z bezwzględnie obowiązujących
+   przepisów.
+
+------------------------------------------------------------------------------------------------------------
+ENGLISH SUMMARY (the Polish text above is the binding version)
+Elektro Plan is free for personal, non-commercial use (your own home/apartment/garage, hobby, learning).
+Not allowed without a separate written license: commercial use (paid design/installation work, business use,
+client deliverables), selling/renting/sublicensing, hosting it as a service, redistributing it or modified
+versions, removing notices, training commercial ML models on it. Your project files and exports belong to you.
+Manufacturer names (SATEL, INTEGRA, VERSA, PERFECTA, ABAX) are trademarks of their owners; catalog values are
+indicative. Results are advisory only and do not replace calculations, standards or a qualified electrician.
+Bug reports and ideas are submitted by you, publicly, on GitHub (nothing is sent automatically; do not include personal data, addresses or access codes); you grant the authors a free, non-exclusive license to use their content to improve the software. Report security issues privately only.
+Optional usage statistics (pseudonymous: counts, closed-list values and random IDs only; never names, addresses or project content) are sent to Umami only with your explicit opt-in and honor Do Not Track / Global Privacy Control.
+Provided "as is" without warranty; liability is limited to the extent permitted by law.
